@@ -25,7 +25,7 @@ pipeline {
       }
       steps {
         sh './jenkins/scripts/deliver-for-development.sh'
-        input message: 'Finished using the web site? (click "Proceed" to continue)'
+        input message: 'Finished using the web site, man? (click "Proceed" to continue)'
         sh './jenkins/scripts/kill.sh'
       }
     }
